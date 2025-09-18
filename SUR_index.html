@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>SUR – Skala Używania Ryzykownego</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; }
+    label { display: block; margin-top: 14px; font-weight: bold; }
+    select { width: 100%; padding: 6px; margin-top: 5px; }
+    button { margin-top: 20px; padding: 10px 20px; font-size: 16px; }
+    #result { margin-top: 30px; font-size: 18px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>SUR – Skala Używania Ryzykownego</h1>
+  <p>Wybierz odpowiedź, która najlepiej opisuje Twoje zachowania w ciągu ostatnich 12 miesięcy:</p>
+  <form id="surForm">
+<label for="q1">1. Zdarza mi się upić lub być pod silnym wpływem substancji.</label>
+<select name="q1">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+<label for="q2">2. W sytuacjach zdenerwowania, niepokoju, radości, spotkań towarzyskich lub odpoczynku sięgam po alkohol lub inne substancje.</label>
+<select name="q2">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+<label for="q3">3. Pod wpływem alkoholu lub innych substancji zdarza mi się podejmować ryzykowne zachowania (np. prowadzenie pojazdu, bójki, nieostrożny seks, nadmierne wydawanie pieniędzy).</label>
+<select name="q3">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+<label for="q4">4. Zwracano mi uwagę, że będąc pod wpływem alkoholu lub innych substancji, zachowuję się w sposób niebezpieczny dla siebie lub innych.</label>
+<select name="q4">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+<label for="q5">5. Pijąc alkohol lub używając innych substancji, robiłem rzeczy, których później żałowałem lub przez które było mi wstyd.</label>
+<select name="q5">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+<label for="q6">6. Mam trudności w wypełnianiu zobowiązań w pracy z powodu picia alkoholu lub używania innych substancji.</label>
+<select name="q6">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+<label for="q7">7. Zaniedbuję obowiązki domowe z powodu picia alkoholu lub używania innych substancji.</label>
+<select name="q7">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+<label for="q8">8. Piję dalej lub kontynuuję używanie substancji, mimo że pogarsza to moje relacje z innymi ludźmi.</label>
+<select name="q8">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+<label for="q9">9. Moje zainteresowania, przyjemności, zdrowie lub dbanie o siebie schodzą na dalszy plan z powodu używania substancji.</label>
+<select name="q9">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+<label for="q10">10. Kiedy „dochodzę do siebie” po użyciu substancji, źle się czuję fizycznie lub psychicznie (np. niepokój, drażliwość, problemy ze snem, nudności).</label>
+<select name="q10">
+<option value="0">0 – nigdy</option>
+<option value="1">1 – rzadziej niż raz w miesiącu</option>
+<option value="2">2 – raz w miesiącu</option>
+<option value="3">3 – raz w tygodniu</option>
+<option value="4">4 – codziennie lub prawie codziennie</option>
+</select>
+
+    <button type="button" onclick="calculateSUR()">Pokaż wynik</button>
+  </form>
+  <div id="result"></div>
+
+<script>
+function calculateSUR() {
+  const form = document.getElementById('surForm');
+  let score = 0;
+  for (let el of form.elements) {
+    if (el.tagName === "SELECT") {
+      score += parseInt(el.value);
+    }
+  }
+
+  let interpretation = "";
+  if (score <= 6) interpretation = "Małe ryzyko.";
+  else if (score <= 14) interpretation = "Używanie szkodliwe.";
+  else interpretation = "Podejrzenie uzależnienia.";
+
+  document.getElementById('result').innerHTML =
+    "Twój wynik: " + score + " punktów.<br>" + interpretation;
+}
+</script>
+</body>
+</html>
